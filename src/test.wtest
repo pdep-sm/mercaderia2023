@@ -1,0 +1,12 @@
+import example.*
+
+const quesoSardo = new ProductoConservado(precioCompra = 3000, diasConservacion = 45, peso = 8, valorAlmacenaje = 100)
+
+
+test "Costo de Producción del Quesito Sardo" {
+	assert.equals(39000, quesoSardo.costoProduccion())
+}
+
+test "Costo del Quesito Sardo" {
+	assert.equals(39800, quesoSardo.costo())
+}
